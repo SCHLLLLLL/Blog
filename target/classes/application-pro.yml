@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://112.124.12.104:3306/blog?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: day1
+    password: Aa8711591
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+logging:
+  level:
+    root: warn
+    com.day: info
+  file:
+    path: log/blog-pro.log
+server:
+  port: 80
+
